@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Букшеринг — Добавить книгу</title>
+  <link rel="stylesheet" href="css/add-book.css" />
+   <link rel="stylesheet" href="css/styles.css">
+       <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/add-book.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="assets/logo.png" alt="Лого">
+            </a>
+            <div class="header-center">
+                <form class="header-search">
+                    <input class="input" type="search" placeholder="Найти книгу..." />
+                </form>
+                <a class="btn btn--outline mobile-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+            </div>
+            <button class="menu-toggle" data-menu-toggle>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" data-nav>
+                <a class="btn btn--outline" href="library.html">Каталог</a>
+                <a class="btn btn--outline" href="add-book.html">Добавить книгу</a>
+                <a class="btn btn--outline desktop-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+                <a class="btn btn--primary" href="messages.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+<main class="container page-pad">
+  <section class="card form-card">
+    <h1 class="section-title h2">Поделиться книгой</h1>
+
+    <form class="form" action="#" method="post">
+      <div class="field">
+        <div class="label">Название <span class="req">*</span></div>
+        <input class="select" type="text" placeholder="Введите название..." required />
+      </div>
+
+      <div class="field">
+        <div class="label">Автор <span class="req">*</span></div>
+        <input class="select" type="text" placeholder="Введите автора..." required />
+      </div>
+
+      <div class="field">
+        <div class="label">ISBN</div>
+        <input class="select" type="text" placeholder="Введите номер..." />
+      </div>
+
+      <div class="field">
+        <div class="label">Выберите категорию <span class="req">*</span></div>
+        <select class="select" required>
+          <option value="" selected disabled>Категория</option>
+          <option>Художественная</option>
+          <option>Учебники</option>
+          <option>Нон-фикшн</option>
+          <option>Комиксы</option>
+        </select>
+      </div>
+
+      <div class="label">Выберите фото <span class="req">*</span></div>
+      <input class="visually-hidden" type="file" accept="image/*" data-file required />
+
+      <div class="dropzone" data-dropzone>
+        Перетащите фото сюда или нажмите для выбора
+        <div class="preview" data-preview></div>
+      </div>
+
+      <div>
+        <div class="label">Опишите состояние книги <span class="req">*</span></div>
+        <textarea class="textarea" placeholder="" required></textarea>
+      </div>
+
+      <div style="text-align:center; margin-top:6px;">
+        <button class="btn btn--sm btn--outline-dark" type="submit">Опубликовать</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links"><a href="#">ВКонтакте</a> | <a href="#">Max</a> | <a href="#">Правила сообщества</a></div>
+    <div class="footer-copy">© 2026 Букшеринг. Все права защищены</div>
+  </div>
+</footer>
+
+</body>
+</html>

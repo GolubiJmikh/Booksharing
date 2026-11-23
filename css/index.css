@@ -1,0 +1,192 @@
+/* css/index.css */
+/* Включать ПОСЛЕ styles.css */
+
+.page--index .site-header {
+  background: #1E0B36;
+}
+
+.page--index .header-inner{
+  gap: 18px;
+  padding: 14px 0;
+}
+
+.page--index .logo{
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 10px 0 rgba(176, 137, 255, .45);
+  background: transparent;
+  border: 0;
+}
+.page--index .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.page--index .header-search .input{
+  max-width: 360px;
+  height: 38px;
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+}
+
+.page--index .btn--outline{
+  border-color: #34D1C2;
+  color: #34D1C2;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page--index .badge{
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.page--index .btn--primary{
+  background: #34D1C2;
+  border-color: #34D1C2;
+  color: #1E0B36;
+  box-shadow: none;
+  height: 44px;
+  padding: 0 22px;
+}
+
+.page--index .index-hero{
+  background: linear-gradient(180deg, #1E0B36 0%, #4B2A78 50%, #8A4FFF 100%);
+  padding: 42px 0 38px;
+}
+
+.page--index .hero-inner{
+  gap: 14px;
+}
+
+.page--index .h1{
+  color: #34D1C2;
+  font-size: 34px;
+  text-shadow: none; 
+}
+
+.page--index .hero-cta .btn--lav{
+  background: #B089FF;
+  border: 2px solid #1E0B36;
+  color: #1E0B36;
+  box-shadow: none;
+  height: 44px;
+  min-width: 280px;
+}
+
+.page--index .counter-wrap{
+  padding: 18px 0 0;
+  gap: 12px;
+}
+.page--index .counter-label{
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 0 6px 0 rgba(138,79,255,.55);
+}
+.page--index .digit{
+  width: 54px;
+  height: 74px;
+  border-radius: 10px;
+  background: #34D1C2;
+  color: #1E0B36;
+  box-shadow: 0 8px 0 rgba(138,79,255,.45);
+}
+
+/* Заголовок "Новинки" */
+.page--index .section-title{
+  margin-top: 18px;
+  margin-bottom: 12px;
+  text-shadow: 0 6px 0 rgba(138,79,255,.55);
+}
+
+/* --- СЛАЙДЕР: 2 карточки в ряд (как на макете) --- */
+.page--index .slider{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 86px; /* место под стрелки */
+}
+
+.page--index .slider-track{
+  gap: 28px;
+  padding: 12px 0 6px;
+}
+
+.page--index .slide{
+  min-width: calc((100% - 28px) / 2);
+  max-width: calc((100% - 28px) / 2);
+}
+
+/* Карточка новинки */
+.page--index .slide-inner{
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.page--index .slide .cover{
+  width: 180px;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+/* “Подробнее” — фиолетовый outline как на макете */
+.page--index .slide .btn--outline-dark{
+  border-color: #8A4FFF;
+  color: #8A4FFF;
+  background: transparent;
+}
+
+/* Сердце — серое (не активное) */
+.page--index .icon-heart svg{
+  fill: #BDBDBD;
+}
+.page--index .icon-heart.is-active svg{
+  fill: #8A4FFF;
+}
+
+/* Стрелки */
+.page--index .slider-arrow{
+  width: 52px;
+  height: 52px;
+  background: #B089FF;
+  color: #1E0B36;
+  box-shadow: none;
+}
+
+/* Точки: активная бирюза, остальные фиолетовые */
+.page--index .dot{
+  width: 14px;
+  height: 14px;
+  background: rgba(176,137,255,.9);
+}
+.page--index .dot.is-active{
+  background: #34D1C2;
+}
+
+/* Footer как на макете */
+.page--index .site-footer{
+  background: #1E0B36;
+}
+.page--index .footer-links{
+  color: #34D1C2;
+}
+/* Активное сердечко — красное */
+.page--index .icon-heart svg{
+  transition: fill .15s ease, transform .15s ease;
+}
+
+.page--index .icon-heart.is-active svg{
+  fill: #FF2D2D; /* красный */
+  transform: scale(1.05);
+}

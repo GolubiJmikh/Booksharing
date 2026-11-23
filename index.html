@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Букшеринг — Главная</title>
+    <link rel="stylesheet" href="css/index2.css" />
+    <link rel="stylesheet" href="css/styles.css">
+        <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="assets/logo.png" alt="Лого">
+            </a>
+            <div class="header-center">
+                <form class="header-search">
+                    <input class="input" type="search" placeholder="Найти книгу..." />
+                </form>
+                <a class="btn btn--outline mobile-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+            </div>
+            <button class="menu-toggle" data-menu-toggle>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" data-nav>
+                <a class="btn btn--outline" href="library.html">Каталог</a>
+                <a class="btn btn--outline" href="add-book.html">Добавить книгу</a>
+                <a class="btn btn--outline desktop-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+                <a class="btn btn--primary" href="messages.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <section class="index-hero">
+        <div class="container hero-inner">
+            <h1 class="h1">Дай книге вторую жизнь</h1>
+            <div class="hero-cta">
+                <a class="btn btn--lav" href="library.html">Найти книгу</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="page-pad">
+        <div class="container">
+            <section class="counter-wrap" data-counter data-counter-target="1212" aria-label="Счетчик обменов">
+                <div class="counter-label">Произошло обменов:</div>
+                <div class="counter-digits" aria-hidden="true">
+                    <div class="digit" data-digit>0</div>
+                    <div class="digit" data-digit>0</div>
+                    <div class="digit" data-digit>0</div>
+                    <div class="digit" data-digit>0</div>
+                </div>
+            </section>
+
+            <h2 class="section-title h2">Новинки</h2>
+
+            <section class="slider" data-slider aria-label="Слайдер новинок">
+                <button class="slider-arrow prev" type="button" data-prev aria-label="Назад">&lt;</button>
+
+                <div class="slider-viewport">
+                    <div class="slider-track" data-slider-track>
+                        <article class="card slide" data-slide>
+                            <div class="slide-inner">
+                                <div class="cover">
+                                    <img src="assets/Гэтсби.jpg"
+                                        alt="Великий Гэтсби">
+                                </div>
+                                <div class="book-meta">
+                                    <h3>Великий Гэтсби</h3>
+                                    <p class="author">Ф. Фицджеральд</p>
+                                    <p class="distance">1.5 км от вас</p>
+                                    <div class="book-actions">
+                                        <a class="btn btn--sm btn--outline-dark"
+                                            href="book-details.html?id=2">Подробнее</a>
+                                        <button class="icon-btn icon-heart" type="button" data-fav-toggle
+                                            data-book-id="2" aria-label="Добавить в избранное">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                <path
+                                                    d="M12 21s-7.2-4.7-9.6-8.5C.2 9.1 1.6 5.6 5 4.7c2-.5 4 .3 5.1 2 1.1-1.7 3.1-2.5 5.1-2 3.4.9 4.8 4.4 2.6 7.8C19.2 16.3 12 21 12 21z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card slide" data-slide>
+                            <div class="slide-inner">
+                                <div class="cover">
+                                    <img src="assets/Дюна.jpg"
+                                        alt="Дюна">
+                                </div>
+                                <div class="book-meta">
+                                    <h3>Дюна</h3>
+                                    <p class="author">Фрэнк Герберт</p>
+                                    <p class="distance">1.6 км от вас</p>
+                                    <div class="book-actions">
+                                        <a class="btn btn--sm btn--outline-dark"
+                                            href="book-details.html?id=3">Подробнее</a>
+                                        <button class="icon-btn icon-heart" type="button" data-fav-toggle
+                                            data-book-id="3" aria-label="Добавить в избранное">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                <path
+                                                    d="M12 21s-7.2-4.7-9.6-8.5C.2 9.1 1.6 5.6 5 4.7c2-.5 4 .3 5.1 2 1.1-1.7 3.1-2.5 5.1-2 3.4.9 4.8 4.4 2.6 7.8C19.2 16.3 12 21 12 21z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card slide" data-slide>
+                            <div class="slide-inner">
+                                <div class="cover">
+                                    <img src="assets/Сияние.jpg"
+                                        alt="Сияние">
+                                </div>
+                                <div class="book-meta">
+                                    <h3>Сияние</h3>
+                                    <p class="author">Стивен Кинг</p>
+                                    <p class="distance">1.1 км от вас</p>
+                                    <div class="book-actions">
+                                        <a class="btn btn--sm btn--outline-dark"
+                                            href="book-details.html?id=6">Подробнее</a>
+                                        <button class="icon-btn icon-heart" type="button" data-fav-toggle
+                                            data-book-id="6" aria-label="Добавить в избранное">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                <path
+                                                    d="M12 21s-7.2-4.7-9.6-8.5C.2 9.1 1.6 5.6 5 4.7c2-.5 4 .3 5.1 2 1.1-1.7 3.1-2.5 5.1-2 3.4.9 4.8 4.4 2.6 7.8C19.2 16.3 12 21 12 21z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card slide" data-slide>
+                            <div class="slide-inner">
+                                <div class="cover">
+                                    <img src="assets/Мастер_и_Маргарита.jpg"
+                                        alt="Мастер и Маргарита">
+                                </div>
+                                <div class="book-meta">
+                                    <h3>Мастер и Маргарита</h3>
+                                    <p class="author">Михаил Булгаков</p>
+                                    <p class="distance">3.5 км от вас</p>
+                                    <div class="book-actions">
+                                        <a class="btn btn--sm btn--outline-dark"
+                                            href="book-details.html?id=7">Подробнее</a>
+                                        <button class="icon-btn icon-heart" type="button" data-fav-toggle
+                                            data-book-id="7" aria-label="Добавить в избранное">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                <path
+                                                    d="M12 21s-7.2-4.7-9.6-8.5C.2 9.1 1.6 5.6 5 4.7c2-.5 4 .3 5.1 2 1.1-1.7 3.1-2.5 5.1-2 3.4.9 4.8 4.4 2.6 7.8C19.2 16.3 12 21 12 21z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card slide" data-slide>
+                            <div class="slide-inner">
+                                <div class="cover">
+                                    <img src="assets/Преступл.jpg"
+                                        alt="Преступление и наказание">
+                                </div>
+                                <div class="book-meta">
+                                    <h3>Преступление и наказание</h3>
+                                    <p class="author">Федор Достоевский</p>
+                                    <p class="distance">2.2 км от вас</p>
+                                    <div class="book-actions">
+                                        <a class="btn btn--sm btn--outline-dark"
+                                            href="book-details.html?id=8">Подробнее</a>
+                                        <button class="icon-btn icon-heart" type="button" data-fav-toggle
+                                            data-book-id="9" aria-label="Добавить в избранное">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                <path
+                                                    d="M12 21s-7.2-4.7-9.6-8.5C.2 9.1 1.6 5.6 5 4.7c2-.5 4 .3 5.1 2 1.1-1.7 3.1-2.5 5.1-2 3.4.9 4.8 4.4 2.6 7.8C19.2 16.3 12 21 12 21z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="slider-arrow next" type="button" data-next aria-label="Вперед">&gt;</button>
+
+                <div class="slider-dots" data-dots aria-label="Пагинация"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-links"><a href="#">ВКонтакте</a> | <a href="#">Max</a> | <a href="#">Правила сообщества</a></div>
+            <div class="footer-copy">© 2026 Букшеринг. Все права защищены</div>
+        </div>
+    </footer>
+</body>
+
+</html>

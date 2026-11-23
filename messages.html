@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Букшеринг — Личный кабинет / Сообщения</title>
+  <link rel="stylesheet" href="css/messages.css" />
+  <link rel="stylesheet" href="css/styles.css">
+      <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/messages.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="assets/logo.png" alt="Лого">
+            </a>
+            <div class="header-center">
+                <form class="header-search">
+                    <input class="input" type="search" placeholder="Найти книгу..." />
+                </form>
+                <a class="btn btn--outline mobile-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+            </div>
+            <button class="menu-toggle" data-menu-toggle>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" data-nav>
+                <a class="btn btn--outline" href="library.html">Каталог</a>
+                <a class="btn btn--outline" href="add-book.html">Добавить книгу</a>
+                <a class="btn btn--outline desktop-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+                <a class="btn btn--primary" href="messages.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+<main class="container page-pad">
+
+  <div class="tabs" role="tablist" aria-label="Разделы кабинета">
+    <button class="tab-btn" type="button" data-tab="messages">Сообщения</button>
+    <button class="tab-btn" type="button" data-tab="reading">Я читаю</button>
+    <button class="tab-btn" type="button" data-tab="mybooks">Мои книги</button>
+  </div>
+
+  <section class="card profile-card" aria-label="Профиль">
+    <img src="assets/avatar.jpg" alt="Аватар профиля">
+    <div>
+      <h3>Анатолий</h3>
+      <h3>Рейтинг: 4.6</h3>
+      <h3>Город: Челябинск</h3>
+    </div>
+    <div class="profile-actions">
+      <button class="btn btn--sm btn--outline-dark">Изменить город</button>
+      <button class="btn btn--sm btn--outline-dark">Изменить аватар</button>
+    </div>
+  </section>
+
+  <div class="dynamic-content">
+    
+    <section data-pane="messages">
+      <h2 class="chat-title h2">Мои сообщения</h2>
+      <div class="card chat-card" data-chat>
+        <div class="dialogs" data-dialogs></div>
+        <div class="chat">
+          <div class="chat-log" data-chat-log></div>
+          <div class="chat-input">
+            <div data-chat-title></div>
+            <input class="input" type="text" placeholder="ваше сообщение..." data-msg />
+            <button class="btn btn--sm btn--outline-dark" type="button" data-send>Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-pane="reading" hidden>
+      <h2 class="section-title h2">Я читаю</h2>
+<div class="book-grid">
+      <article class="card book-card">
+        <div class="cover"><img src="assets/Сияние.jpg" alt="Книга"></div>
+        <p class="title">Сияние</p>
+        <p class="author">Стивен Кинг</p>
+          <button class="btn btn--sm btn--outline-dark">Продолжить</button>
+      </article>
+      </div>
+    </section>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid var(--c-lav); margin: 50px 0; opacity: 0.2;">
+
+  <section id="my-books-section">
+    <h2 class="section-title h2">Мои книги</h2>
+    <div class="book-grid">
+      <article class="card book-card">
+        <div class="cover"><img src="assets/Дориан.jpg" alt="Книга"></div>
+        <p class="title">Портрет Дориана Грея</p>
+        <p class="author">Оскар Уайльд</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn btn--sm btn--outline-dark">Редактировать</button>
+          <button class="btn btn--sm btn--outline-dark">Уже отдал</button>
+        </div>
+      </article>
+            <article class="card book-card">
+        <div class="cover"><img src="assets/Дюна.jpg" alt="Книга"></div>
+        <p class="title">Дюна</p>
+        <p class="author">Фрэнк Герберт</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn btn--sm btn--outline-dark">Редактировать</button>
+          <button class="btn btn--sm btn--outline-dark">Уже отдал</button>
+        </div>
+      </article>
+            <article class="card book-card">
+        <div class="cover"><img src="assets/Гэтсби.jpg" alt="Книга"></div>
+        <p class="title">Великий Гэтсби</p>
+        <p class="author">Ф. Фицджеральд</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn btn--sm btn--outline-dark">Редактировать</button>
+          <button class="btn btn--sm btn--outline-dark">Уже отдал</button>
+        </div>
+      </article>
+      </div>
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links"><a href="#">ВКонтакте</a> | <a href="#">Max</a> | <a href="#">Правила сообщества</a></div>
+    <div class="footer-copy">© 2026 Букшеринг. Все права защищены</div>
+  </div>
+</footer>
+</body>
+</html>

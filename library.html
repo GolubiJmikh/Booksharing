@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Букшеринг — Каталог</title>
+  <link rel="stylesheet" href="css/library.css" />
+  <link rel="stylesheet" href="css/styles.css">
+      <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/library.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="assets/logo.png" alt="Лого">
+            </a>
+            <div class="header-center">
+                <form class="header-search">
+                    <input class="input" type="search" placeholder="Найти книгу..." />
+                </form>
+                <a class="btn btn--outline mobile-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+            </div>
+            <button class="menu-toggle" data-menu-toggle>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" data-nav>
+                <a class="btn btn--outline" href="library.html">Каталог</a>
+                <a class="btn btn--outline" href="add-book.html">Добавить книгу</a>
+                <a class="btn btn--outline desktop-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+                <a class="btn btn--primary" href="messages.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+  <main class="container page-pad">
+    <h1 class="page-title">Поиск по автору или названию книги:</h1>
+
+    <div class="library-layout">
+      <section>
+        <div class="search-row">
+          <input class="input" type="search" placeholder="Поиск" data-library-search aria-label="Поиск по каталогу" />
+        </div>
+
+        <div class="book-grid" data-grid></div>
+      </section>
+
+      <aside class="card sidebar" data-filters aria-label="Фильтры">
+    <button class="filter-toggle" data-filter-toggle>
+        <span>V</span> Фильтры
+    </button>
+        <div class="filter-content" data-filter-content>
+          <div class="filter-block">
+            <h3>Жанры</h3>
+            <label class="check"><input type="checkbox" name="genre" value="Ужасы"> Ужасы</label>
+            <label class="check"><input type="checkbox" name="genre" value="Фантастика"> Фантастика</label>
+            <label class="check"><input type="checkbox" name="genre" value="Детектив"> Детектив</label>
+            <label class="check"><input type="checkbox" name="genre" value="Проза"> Проза</label>
+            <label class="check"><input type="checkbox" name="genre" value="Роман"> Роман</label>
+            <label class="check"><input type="checkbox" name="genre" value="Классика"> Классика</label>
+          </div>
+
+          <div class="filter-block">
+            <h3>Язык книги</h3>
+            <label class="check"><input type="checkbox" name="lang" value="Русский"> Русский</label>
+            <label class="check"><input type="checkbox" name="lang" value="Английский"> Английский</label>
+          </div>
+
+          <div class="filter-block">
+            <h3>Состояние</h3>
+            <label class="check"><input type="checkbox" name="cond" value="Новая"> Новая</label>
+            <label class="check"><input type="checkbox" name="cond" value="Видавшая виды"> Видавшая виды</label>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links"><a href="#">ВКонтакте</a> | <a href="#">Max</a> | <a href="#">Правила сообщества</a></div>
+      <div class="footer-copy">© 2026 Букшеринг. Все права защищены</div>
+    </div>
+  </footer>
+</body>
+
+</html>

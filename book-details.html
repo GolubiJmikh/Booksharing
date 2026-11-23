@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Букшеринг — Страница книги</title>
+  <link rel="stylesheet" href="css/book-details.css" />
+  <link rel="stylesheet" href="css/styles.css">
+      <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/book-details.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="assets/logo.png" alt="Лого">
+            </a>
+            <div class="header-center">
+                <form class="header-search">
+                    <input class="input" type="search" placeholder="Найти книгу..." />
+                </form>
+                <a class="btn btn--outline mobile-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+            </div>
+            <button class="menu-toggle" data-menu-toggle>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" data-nav>
+                <a class="btn btn--outline" href="library.html">Каталог</a>
+                <a class="btn btn--outline" href="add-book.html">Добавить книгу</a>
+                <a class="btn btn--outline desktop-fav">
+                    Избранное: <span class="badge" data-fav-count>0</span>
+                </a>
+                <a class="btn btn--primary" href="messages.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+<main class="container page-pad">
+  <section class="details-wrap">
+    <div class="details-grid">
+      <div class="card details-grid2">
+      <div class="details-left">
+        <div class="main-cover">
+          <img data-main-cover src="assets/Дориан.jpg" alt="Портрет Дориана Грея — обложка">
+        </div>
+
+        <div class="thumbs" aria-label="Галерея фото">
+          <button class="thumb" type="button" data-thumb data-src="assets/page.jpg" aria-label="Фото страницы">
+            <img src="assets/page.jpg" alt="">
+          </button>
+          <button class="thumb" type="button" data-thumb data-src="assets/Без названия (10).jpg" aria-label="Фото 2">
+            <img src="assets/Без названия (10).jpg" alt="">
+          </button>
+          <button class="thumb" type="button" data-thumb data-src="assets/Дориан.jpg" aria-label="Фото 3">
+            <img src="assets/Дориан.jpg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="details-center">
+        <h1>Портрет Дориана Грея</h1>
+        <h2>Оскар Уайльд</h2>
+        <p class="year">Год издания: 2009</p>
+
+        <div class="description">
+          <p>«Портрет Дориана Грея» — история о молодом аристократе, который получил дар вечной юности ценой собственной души.</p>
+          <p>Книга в «читаном» состоянии. Из нюансов: корешок побит жизнью, а на страницах встречаются авторские подчеркивания важных мыслей. Подойдет тем, кто ищет книгу для чтения, а не для красоты на полке.</p>
+        </div>
+
+        <button style="font-size: 20px;" class="btn btn--sm btn--outline-dark" type="button" data-open-modal>Хочу прочитать</button>
+      </div>
+</div>
+      <aside class="card details-right" aria-label="Действия">
+        <div class="owner">
+          <img src="assets/avatar.jpg" alt="Аватар профиля">
+          <div class="owner-info">
+            <div class="owner-name" style="font-weight:800; font-size:20px;">Анатолий</div>
+            <div class="owner-rating" style="font-weight:700;">Рейтинг: 4.6</div>
+          </div>
+
+          <a class="btn btn--sm btn--outline-dark" href="messages.html">Написать владельцу</a>
+
+          <button class="btn btn--sm btn--outline-dark" 
+                  type="button" 
+                  data-fav-toggle 
+                  data-book-id="1" 
+                  aria-label="Добавить в избранное">
+            <span>Добавить в избранное</span>
+            <span class="icon-heart" aria-hidden="true" style="display:grid; place-items:center;">
+              <svg viewBox="0 0 24 24" width="20" height="20">
+                <path d="M12 21s-7.2-4.7-9.6-8.5C.2 9.1 1.6 5.6 5 4.7c2-.5 4 .3 5.1 2 1.1-1.7 3.1-2.5 5.1-2 3.4.9 4.8 4.4 2.6 7.8C19.2 16.3 12 21 12 21z" fill="currentColor"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+</main>
+<!-- Modal -->
+<div class="modal-backdrop" data-modal-backdrop role="dialog" aria-modal="true" aria-label="Подтверждение правил">
+  <div class="modal">
+    <h3>Перед обменом</h3>
+    <p>
+      Подтвердите, что соблюдаете правила: общайтесь вежливо, договаривайтесь о месте заранее,
+      честно описывайте состояние книги и приходите вовремя.
+    </p>
+    <div class="modal-actions">
+      <button class="btn btn--sm btn--outline-dark" type="button" data-close-modal>Отмена</button>
+      <button class="btn btn--sm btn--primary" type="button" data-close-modal>Подтверждаю</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links"><a href="#">ВКонтакте</a> | <a href="#">Max</a> | <a href="#">Правила сообщества</a></div>
+    <div class="footer-copy">© 2026 Букшеринг. Все права защищены</div>
+  </div>
+</footer>
+</body>
+</html>
